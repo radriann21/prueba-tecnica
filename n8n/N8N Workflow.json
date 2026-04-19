@@ -1,0 +1,526 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "f38209ea-58cb-48d0-8836-0cd47e719d6c",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -64,
+        -256
+      ],
+      "id": "d00ea0b8-2c16-4af9-85f3-f7c9b7c286f1",
+      "name": "Webhook",
+      "webhookId": "f38209ea-58cb-48d0-8836-0cd47e719d6c",
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "body.reports",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        288,
+        -192
+      ],
+      "id": "c2ad6ff0-b64d-4bdb-aa93-29177d86af4a",
+      "name": "Split Out",
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "088e7fcd-6a62-406b-b62e-f4f99ae95b4d",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "=warning",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "d24aabbf-4482-4a7e-afc5-48a7b8bd1e0a",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "critical",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        496,
+        -192
+      ],
+      "id": "2a53a745-e727-445e-98a3-3acbfc60d588",
+      "name": "Filter",
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.status }}",
+                    "rightValue": "warning",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d447c698-658f-4a61-a170-5c4a37dcf8b4"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "cdf06660-545c-4d93-978c-5ec5c78cd94e",
+                    "leftValue": "={{ $json.status }}",
+                    "rightValue": "critical",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        -176
+      ],
+      "id": "2dd2d61b-9c9c-4160-ad73-906d3f7be389",
+      "name": "Switch",
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const campaigns = $input.all();\n\nconst list = campaigns.map((campaign) => {\n  return `- **${campaign.json.name}**: ${campaign.json.metric}`;\n}).join('\\n');\n\nconst message = `Las siguientes campañas tienen valores críticos, se recomiendan acciones inmediatas:\\n\\n${list}`;\n\nreturn {\n  content: message.length > 2000 \n    ? message.substring(0, 1800) + \"... (truncada)\" \n    : message\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1056,
+        32
+      ],
+      "id": "cd62f128-fa36-4962-8d19-272a51aa61f9",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1lcLipqQMgDNxtPaAcJUuEtLI3_9iOVvfxT9wQFO7EN8",
+          "mode": "list",
+          "cachedResultName": "Campañas",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1lcLipqQMgDNxtPaAcJUuEtLI3_9iOVvfxT9wQFO7EN8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1lcLipqQMgDNxtPaAcJUuEtLI3_9iOVvfxT9wQFO7EN8/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "metric",
+              "displayName": "metric",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "evaluatedAt",
+              "displayName": "evaluatedAt",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1056,
+        -192
+      ],
+      "id": "d36ec59f-8010-4b19-8316-bd9ad6f904a5",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "uVaESYnbuh2NxZ99",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "={{ $json.content }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        1248,
+        32
+      ],
+      "id": "7e16dee8-2ab7-4bce-a5d2-c4987d414c78",
+      "name": "Discord",
+      "webhookId": "cdfffde5-7d7b-465e-ac50-9fd62d8f7da4",
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "tB0LIUcKwu0wvBat",
+          "name": "Discord Webhook account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "Ha ocurrido un error en el nodo.",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        400,
+        -16
+      ],
+      "id": "0e8d9db4-77d8-4cff-8dc5-4606c528b05c",
+      "name": "Discord1",
+      "webhookId": "f4d2325f-4fcb-417a-bd2d-098ec3fb12d4",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "tB0LIUcKwu0wvBat",
+          "name": "Discord Webhook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "Ha ocurrido un error en el nodo.",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        656,
+        48
+      ],
+      "id": "05a866a2-79e6-4560-bb21-35745e1dca13",
+      "name": "Discord2",
+      "webhookId": "317b8ef9-f7d0-419b-bf6c-c9634ce04364",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "tB0LIUcKwu0wvBat",
+          "name": "Discord Webhook account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        496,
+        -400
+      ],
+      "id": "d8dffcb0-3b40-4060-be6f-1d00f0e75712",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hooks.slack.com/services/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",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": \"🚨 *¡Alerta en la Automatización!*\\nEl flujo *{{ $json.workflow.name }}* ha sufrido una interrupción, pero ha sido contenida.\\n\\n📛 *Nodo que falló:* {{ $json.execution.lastNodeExecuted }}\\n🔴 *Detalle del Error:* {{ $json.execution.error.message }}\\n\\n🔍 *Revisar ejecución:* {{ $json.execution.url }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        704,
+        -400
+      ],
+      "id": "dbbd404d-2903-498f-8f2d-fad2c5372ce2",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "745358e1-0814-4c8b-933c-e9cf42af5db2",
+              "leftValue": "={{ $json.body.llmSummary }}",
+              "rightValue": "",
+              "operator": {
+                "type": "object",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -80,
+        0
+      ],
+      "id": "f20eac1c-aa3a-4a28-abde-607928b91f94",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "={{ $json.body.llmSummary.summary }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        144,
+        64
+      ],
+      "id": "32de8711-337c-490d-9f21-7d23af6f7449",
+      "name": "Discord4",
+      "webhookId": "cffc5454-5443-4995-bd01-4dd28d0bfcaf",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "tB0LIUcKwu0wvBat",
+          "name": "Discord Webhook account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Discord1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Discord2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Append row in sheet": {
+      "main": [
+        [],
+        []
+      ]
+    },
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Discord4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "dcab31e1-072b-4f0d-ad5c-a2915f32a251",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b41bc203d30935b9253f8a2c73015cf7a490c14d9a0c7638459f72e659e06b1f"
+  },
+  "id": "RW98TjsnEWOSu6IX",
+  "tags": []
+}

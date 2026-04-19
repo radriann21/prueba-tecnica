@@ -1,0 +1,702 @@
+[
+  {
+    "id": "plasma",
+    "name": "Plasma",
+    "metric": -17.41955,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "memecore",
+    "name": "MemeCore",
+    "metric": -16.93046,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "irys",
+    "name": "Irys",
+    "metric": -16.07348,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "sonic-3",
+    "name": "Sonic",
+    "metric": -11.71214,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "monad",
+    "name": "Monad",
+    "metric": -9.38916,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "story-2",
+    "name": "Story",
+    "metric": -9.36,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "the-open-network",
+    "name": "Toncoin",
+    "metric": -9.17837,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "celestia",
+    "name": "Celestia",
+    "metric": -9.11345,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "aioz-network",
+    "name": "AIOZ Network",
+    "metric": -8.94013,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "plume",
+    "name": "Plume",
+    "metric": -8.60139,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "creditcoin-2",
+    "name": "Creditcoin",
+    "metric": -8.26247,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "zero-gravity",
+    "name": "0G",
+    "metric": -8.11824,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "elrond-erd-2",
+    "name": "MultiversX",
+    "metric": -7.77836,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "berachain-bera",
+    "name": "Berachain",
+    "metric": -7.67952,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "oasis-network",
+    "name": "Oasis",
+    "metric": -7.67299,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "pi-network",
+    "name": "Pi Network",
+    "metric": -7.43555,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "dusk-network",
+    "name": "DUSK",
+    "metric": -7.3677,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "gala",
+    "name": "GALA",
+    "metric": -7.06118,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "mina-protocol",
+    "name": "Mina Protocol",
+    "metric": -6.91447,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "enjincoin",
+    "name": "Enjin Coin",
+    "metric": -6.90522,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "telcoin",
+    "name": "Telcoin",
+    "metric": -6.86265,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "mantra",
+    "name": "MANTRA",
+    "metric": -6.7021,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "kaia",
+    "name": "Kaia",
+    "metric": -6.6391,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "keeta",
+    "name": "Keeta",
+    "metric": -6.5647,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "polymesh",
+    "name": "Polymesh",
+    "metric": -6.40675,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "digibyte",
+    "name": "DigiByte",
+    "metric": -6.26372,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "aptos",
+    "name": "Aptos",
+    "metric": -6.18179,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "theta-token",
+    "name": "Theta Network",
+    "metric": -5.93341,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "kaspa",
+    "name": "Kaspa",
+    "metric": -5.68801,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "casper-network",
+    "name": "Casper Network",
+    "metric": -5.42455,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "iota",
+    "name": "IOTA",
+    "metric": -5.33342,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "sui",
+    "name": "Sui",
+    "metric": -5.32073,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "vethor-token",
+    "name": "VeThor",
+    "metric": -5.25169,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "vaulta",
+    "name": "Vaulta",
+    "metric": -5.24814,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "algorand",
+    "name": "Algorand",
+    "metric": -5.23474,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "flow",
+    "name": "Flow",
+    "metric": -5.22247,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "decred",
+    "name": "Decred",
+    "metric": -5.15924,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "bittensor",
+    "name": "Bittensor",
+    "metric": -5.0485,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "internet-computer",
+    "name": "Internet Computer",
+    "metric": -5.0148,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "filecoin",
+    "name": "Filecoin",
+    "metric": -5.00786,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "vana",
+    "name": "Vana",
+    "metric": -4.96045,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "kava",
+    "name": "Kava",
+    "metric": -4.83292,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "sei-network",
+    "name": "Sei",
+    "metric": -4.80846,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "avalanche-2",
+    "name": "Avalanche",
+    "metric": -4.64575,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "near",
+    "name": "NEAR Protocol",
+    "metric": -4.61586,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ecash",
+    "name": "eCash",
+    "metric": -4.56058,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "injective-protocol",
+    "name": "Injective",
+    "metric": -4.55286,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "astar",
+    "name": "Astar",
+    "metric": -4.53497,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ethereum-classic",
+    "name": "Ethereum Classic",
+    "metric": -4.39794,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "tezos",
+    "name": "Tezos",
+    "metric": -4.35003,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "hyperliquid",
+    "name": "Hyperliquid",
+    "metric": -4.32878,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "concordium",
+    "name": "Concordium",
+    "metric": -4.27844,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "kite-2",
+    "name": "Kite",
+    "metric": -4.26122,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "fogo",
+    "name": "Fogo",
+    "metric": -4.21865,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "zcash",
+    "name": "Zcash",
+    "metric": -4.10151,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "cardano",
+    "name": "Cardano",
+    "metric": -4.0365,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "solana",
+    "name": "Solana",
+    "metric": -3.88739,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "flare-networks",
+    "name": "Flare",
+    "metric": -3.56804,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "nexpace",
+    "name": "Nexpace",
+    "metric": -3.56392,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "vechain",
+    "name": "VeChain",
+    "metric": -3.46828,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "dydx-chain",
+    "name": "dYdX",
+    "metric": -3.44476,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ethereum",
+    "name": "Ethereum",
+    "metric": -3.44042,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "xdce-crowd-sale",
+    "name": "XDC Network",
+    "metric": -3.37916,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ripple",
+    "name": "XRP",
+    "metric": -3.10192,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "binancecoin",
+    "name": "BNB",
+    "metric": -3.01761,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "crypto-com-chain",
+    "name": "Cronos",
+    "metric": -2.93907,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "chiliz",
+    "name": "Chiliz",
+    "metric": -2.75327,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "hedera-hashgraph",
+    "name": "Hedera",
+    "metric": -2.74929,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "arweave",
+    "name": "Arweave",
+    "metric": -2.67011,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "unipoly",
+    "name": "Unipoly",
+    "metric": -2.42304,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "bitcoin",
+    "name": "Bitcoin",
+    "metric": -2.40337,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.877Z"
+  },
+  {
+    "id": "gnosis",
+    "name": "Gnosis",
+    "metric": -2.35811,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "bitcoin-cash",
+    "name": "Bitcoin Cash",
+    "metric": -2.32255,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "thorchain",
+    "name": "THORChain",
+    "metric": -2.30373,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "unit-bitcoin",
+    "name": "Unit Bitcoin",
+    "metric": -2.21878,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "litecoin",
+    "name": "Litecoin",
+    "metric": -1.70745,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "verus-coin",
+    "name": "Verus",
+    "metric": -1.69658,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "aelf",
+    "name": "aelf",
+    "metric": -1.61867,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "canton-network",
+    "name": "Canton",
+    "metric": -1.38107,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "zetachain",
+    "name": "ZetaChain",
+    "metric": -1.15906,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "chain-2",
+    "name": "Onyxcoin",
+    "metric": -1.07214,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "mantra-dao",
+    "name": "MANTRA [Old]",
+    "metric": -0.78674,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "wemix-token",
+    "name": "WEMIX",
+    "metric": -0.74016,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "stable-2",
+    "name": "​​Stable",
+    "metric": -0.69321,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "coinex-token",
+    "name": "CoinEx",
+    "metric": -0.49212,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ozone-chain",
+    "name": "Ozone Chain",
+    "metric": -0.24184,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "aleo",
+    "name": "ALEO",
+    "metric": -0.0612,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "fasttoken",
+    "name": "Fasttoken",
+    "metric": null,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ini",
+    "name": "INI",
+    "metric": 0.06096,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "tron",
+    "name": "TRON",
+    "metric": 0.06709,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "beldex",
+    "name": "Beldex",
+    "metric": 0.16166,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "qubic-network",
+    "name": "Qubic",
+    "metric": 0.32147,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "midnight-3",
+    "name": "Midnight",
+    "metric": 0.84307,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "nano",
+    "name": "Nano",
+    "metric": 0.84768,
+    "status": "critical",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "monero",
+    "name": "Monero",
+    "metric": 1.19939,
+    "status": "warning",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "movement",
+    "name": "Movement",
+    "metric": 1.20233,
+    "status": "warning",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "hash-2",
+    "name": "Provenance Blockchain",
+    "metric": 1.92361,
+    "status": "warning",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "zano",
+    "name": "Zano",
+    "metric": 2.25901,
+    "status": "warning",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "ronin",
+    "name": "Ronin",
+    "metric": 4.8206,
+    "status": "ok",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  },
+  {
+    "id": "chia",
+    "name": "Chia",
+    "metric": 5.96039,
+    "status": "ok",
+    "evaluatedAt": "2026-04-19T03:08:52.878Z"
+  }
+]
